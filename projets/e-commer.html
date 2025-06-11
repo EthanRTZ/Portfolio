@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puissance X - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .parallax-header {
+            background-image: url('fond-ecomm.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+            position: relative;
+        }
+        .parallax-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body class="bg-purple-50">
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold text-purple-800">Mon Portfolio</div>
+                <div class="space-x-4">
+                    <a href="../index.html" class="text-purple-700 hover:text-purple-900">Accueil</a>
+                    <a href="../projets.html" class="text-purple-700 hover:text-purple-900">Projets</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="parallax-header">
+        <div class="parallax-overlay"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+            <h1 class="text-5xl font-bold mb-4">Site de E-Commerce</h1>
+            <p class="text-xl">E-commerce de ski </p>
+        </div>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-4 -mt-16 relative z-10">
+        <div class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-purple-800 mb-6">À propos du projet</h2>
+            <p class="text-gray-600 mb-6">
+                Ce site de e-commerce est une plateforme moderne développée en Flask, permettant aux utilisateurs de
+                naviguer, acheter et gérer leurs produits en ligne. Il offre une expérience utilisateur fluide avec
+                des fonctionnalités avancées pour la gestion des commandes et des paiements.
+            </p>
+
+            <h3 class="text-2xl font-semibold text-purple-800 mb-4">Fonctionnalités principales</h3>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>connexion a un compte</li>
+                <li>affichage du panier </li>
+                <li>filtre des article disponible</li>
+                <li>liste d'envie et historique produit</li>
+                <li>notes et commentaire de produits</li>
+                <li>plusieurs declinaison pour un article </li>
+
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-purple-800 mb-4">Technologies utilisées</h3>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Python</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">HTML</span>
+
+            </div>
+
+            <h3 class="text-2xl font-semibold text-purple-800 mb-4">Traces </h3>
+            <img src="image.png" alt="Capture d'écran du projet" class="w-full h-auto mb-6 rounded-lg shadow-md">
+            <p class="text-gray-600 mb-6">
+                La figure montre une capture d’écran du fichier client_liste_envies.py, dans un projet Flask. Elle
+                affiche une fonction client_liste_envies_show liée à la route /client/envies/show, qui permet de
+                récupérer et d’afficher la liste d’envies (wishlist) d’un utilisateur connecté.
+            </p>
+            <p class="text-gray-600 mb-6">
+                Le code commence par établir une connexion à la base de données via un curseur, puis récupère
+                l'identifiant du client depuis la session (session['id_user']). Cette gestion de session est un savoir
+                clé en développement web sécurisé. On observe ensuite l’utilisation du module request pour extraire un
+                paramètre GET, montrant la capacité à interagir dynamiquement avec l’interface utilisateur.
+            </p>
+            <p class="text-gray-600 mb-6">
+                Des requêtes SQL avec jointures sont utilisées pour récupérer les informations détaillées des articles
+                de la wishlist (nom, prix, stock, image, etc.). Cela montre une bonne maîtrise de l’écriture de
+                requêtes complexes et de la protection contre les injections SQL via l’utilisation de placeholders (%s).
+            </p>
+            <p class="text-gray-600 mb-6">
+                Le code initialise aussi plusieurs structures (listes, dictionnaires) destinées à contenir les
+                résultats ou statistiques, illustrant un savoir-faire en structuration des données avant affichage.
+            </p>
+            <p class="text-gray-600 mb-6">
+                Cette fonction montre donc la mise en œuvre combinée de plusieurs savoirs en développement web :
+                gestion de session, traitement des requêtes HTTP, interaction avec une base de données, et organisation
+                logique du backend. Elle témoigne d’un savoir-faire solide en architecture serveur dans le cadre
+                d’une application web interactive.
+            </p>
+
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300">
+                    Voir le code source
+                </a>
+                <a href="#" class="bg-purple-100 text-purple-800 px-6 py-3 rounded-lg hover:bg-purple-200 transition duration-300">
+                    Jouer en ligne
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-purple-900 text-white mt-16">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <p class="text-center">&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
