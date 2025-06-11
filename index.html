@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-purple-50">
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="text-xl font-bold text-purple-800">Mon Portfolio</div>
@@ -20,70 +20,81 @@
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto mt-10 px-4">
-        <section class="text-center mb-16">
-            <h1 class="text-4xl font-bold mb-4 text-purple-900">Bienvenue sur mon portfolio</h1>
-            <p class="text-xl text-purple-600">Développeur passionné par la création web</p>
-        </section>
+    <!-- Section Hero - Visible en premier -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 to-purple-200 pt-16">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold mb-6 text-purple-900">Bienvenue sur mon portfolio</h1>
+            <p class="text-2xl text-purple-600 mb-8">Ethan - Développeur en 1er année de BUT informatique </p></p>
+            <div class="animate-bounce">
+                <p class="text-purple-700 text-lg">↓ Scroll pour découvrir mes projets ↓</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Projet 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-purple-800">Creation d'un site statique </h3>
-                    <p class="text-gray-600">Une application web moderne pour gérer vos tâches quotidiennes</p>
-                    <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
+    <!-- Section Projets - Accessible en scrollant -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-purple-900">Mes Projets</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-purple-100">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-800">Creation d'un site statique </h3>
+                        <p class="text-gray-600">Une application web moderne pour gérer vos tâches quotidiennes</p>
+                        <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-purple-100">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-800">creation d'un projet flask </h3>
+                        <p class="text-gray-600">Une plateforme de commerce électronique complète</p>
+                        <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-purple-100">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-800">application java pauvocoder</h3>
+                        <p class="text-gray-600">Système de gestion de bibliothèque avec suivi des emprunts</p>
+                        <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-purple-100">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-800">site de E-commerce en Flask</h3>
+                        <p class="text-gray-600">Application météo en temps réel avec prévisions sur 7 jours</p>
+                        <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-purple-100">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-800">Puissance X</h3>
+                        <p class="text-gray-600">Plateforme de réseau social avec partage de posts</p>
+                        <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-purple-100">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-800">mini jeu Pokemon </h3>
+                        <p class="text-gray-600">Application de suivi d'entraînement personnalisé</p>
+                        <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Projet 2 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-purple-800">creation d'un projet flask </h3>
-                    <p class="text-gray-600">Une plateforme de commerce électronique complète</p>
-                    <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
-                </div>
-            </div>
-
-            <!-- Projet 3 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-purple-800">application java pauvocoder</h3>
-                    <p class="text-gray-600">Système de gestion de bibliothèque avec suivi des emprunts</p>
-                    <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
-                </div>
-            </div>
-
-            <!-- Projet 4 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-purple-800">site de E-commerce en Flask</h3>
-                    <p class="text-gray-600">Application météo en temps réel avec prévisions sur 7 jours</p>
-                    <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
-                </div>
-            </div>
-
-            <!-- Projet 5 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-purple-800">Puissance X</h3>
-                    <p class="text-gray-600">Plateforme de réseau social avec partage de posts</p>
-                    <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
-                </div>
-            </div>
-
-            <!-- Projet 6 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-purple-800">mini jeu Pokemon </h3>
-                    <p class="text-gray-600">Application de suivi d'entraînement personnalisé</p>
-                    <a href="projets.html" class="mt-4 inline-block text-purple-600 hover:text-purple-800">En savoir plus →</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-purple-900 text-white mt-16">
+    <footer class="bg-purple-900 text-white">
         <div class="max-w-6xl mx-auto px-4 py-8">
             <p class="text-center">&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
         </div>
